@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  
+  <form class="newsletter-container">
+    <div class="newsletter-content">
+      <h1 class="newsletter-heading">Stay updated!</h1>
+      <p class="para-heading">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="tick-para"><img src="./assets/images/icon-list.svg" alt="tick">Product discovery and building what matters</p>
+      <p class="tick-para"><img src="./assets/images/icon-list.svg" alt="tick">Measuring to ensure updates are a success</p>
+      <p class="tick-para"><img src="./assets/images/icon-list.svg" alt="tick">And much more!</p>
+      <div class="newsletter-input-title">
+        <h5>Email address</h5>
+        <h5>Valid email required</h5>
+      </div>
+      <div>
+      <input type="text" placeholder="email@company.com" class="email-input">
+      </div>
+      <Button class="btn" onclick="emailValidation()">Subscribe to monthly newsletter</Button>
+    </div>
+    <picture class="newsletter-image">
+      <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 426px)" class="mobile-image">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-image">
+    </picture>
+    <div class="newsletter-image-mobile"></div>
+  </form>
+
+  <script src="./js/validation.js"></script>
+</body>
+</html>
