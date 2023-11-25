@@ -10,17 +10,6 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
   
   <div class="newsletter-container" action="#" >
     <div class="newsletter-content">
@@ -41,16 +30,18 @@
     </div>
     <!-- <picture class="newsletter-image">
       <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 426px)" class="mobile-image"> -->
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-image">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-image" class="newsletter-image"> 
     <!-- </picture>
     <div class="newsletter-image-mobile"></div> -->
-  </div>
+  </div> 
 
   <div class="popup-container hide">
     <img src="./assets/images/icon-success.svg" alt="success-tick" class="success-tick">
     <h1 class="popup-heading">Thanks for subscribing!</h1>
     <p class="popup-para">A confirmation email has been sent to <small id="get-email"></small>. Please open it and click the button inside to confirm your subscription. </p>
-    <button class="popup-btn btn" onclick='dismissMsg()'>Dismiss message</button>
+
+      <button class="popup-btn btn" onclick='dismissMsg()'>Dismiss message</button>
+  
   </div>
 
   <script src="./js/validation.js"></script>
